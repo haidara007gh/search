@@ -1,0 +1,140 @@
+body{
+    margin: 10px,10px,10px,0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#mainnav, #imagenav{
+    display:flex;
+    justify-content: right;
+}
+#advancednavcontainer{
+    display:flex;
+    justify-content: right;
+}
+
+a{
+    color:inherit;
+    padding:10px;
+}
+a:hover{
+    color:blue;
+}
+%button{
+    padding:5px 10px 5px 10px;
+    text-align:center;
+    font-size: 14px;
+    border-style: 1px solid #0d7dec;
+    border-radius: 4px;
+    font-family: sans-serif;
+}
+.button{
+    @extend %button;
+    background-color:#f8f9fa;
+    color:#000000;
+    
+}
+
+#advsubmitbtn{
+    margin-top: 20px;
+    margin-left: 505px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:#0d7dec;
+    border-radius: 2px;
+    border-color: #0d7dec;
+    color:white;
+}
+h2{
+    color:red
+}
+hr{
+    margin-bottom: 20px;
+}
+#mainform{
+    text-align:center;
+}
+
+
+#advancedform{
+    text-align:left;
+}
+.full{
+    width:400px;
+    height:20px;
+    border-radius: 1px;
+}
+
+.formelement{
+    display:flex;
+    flex-wrap:wrap;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#searchbox>input{
+    width:600px;
+    height:40px;
+    border:1px solid grey;
+    border-radius: 25px;
+    padding-left: 25px;
+    margin-bottom:20px;
+    
+}
+
+@media (max-width:600px){
+    #searchbox>input{
+        width:300px;
+    }
+}
+%logocontainer{
+    margin-top:20px;
+    margin-bottom:25px;
+    padding-top:25px;
+    display: flex;
+    justify-content: center;     
+}
+#imagelogocontainer{
+    @extend %logocontainer;
+    position:relative;
+    #imagestext{
+        color:blue;
+        font-size: 16px;
+        position:absolute;
+        bottom:0;
+        left:795px;
+    } 
+}
+#advancedlogocontainer{
+    margin-bottom:10px;
+    display:flex;
+    justify-content: left;
+    font-size:50px;
+
+}
+
+#mainlogocontainer{
+    @extend %logocontainer;
+}
+#googlelogo{
+    font-size:100px
+}
+#input1{
+    position:relative;
+    left:100px;
+}
+#input2{
+    position:relative;
+    left:27px;
+
+}
+#input3{
+    position:relative;
+    left:71px;
+}
+#input4{
+    position:relative;
+    left:61px;
+}
+
+
